@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yhteen- ja vähennyslaskupeli</title>
+    <link rel="stylesheet" href="yhteenlaskupeli.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Yhteen- ja vähennyslaskut (0-100)</h1>
+      <div class="timer">Aikaa jäljellä: <span id="time">60</span>s</div>
+
+      <div class="score">Pisteet: <span id="score">0</span></div>
+
+      <div id="question-box">Paina "Aloita peli"</div>
+
+      <input
+        type="number"
+        id="answer"
+        placeholder="Vastauksesi"
+        inputmode="numeric"
+        disabled
+      />
+
+      <div class="buttons">
+        <button id="submit">Tarkista vastaus</button>
+        <button id="start">Aloita peli</button>
+        <button id="reset">Lopeta peli</button>
+      </div>
+
+      <!-- ✅ Numeronäppäimistö sijoitettu containerin sisälle -->
+      <div class="number-pad">
+        <button class="key">7</button>
+        <button class="key">8</button>
+        <button class="key">9</button>
+        <button class="key">4</button>
+        <button class="key">5</button>
+        <button class="key">6</button>
+        <button class="key">1</button>
+        <button class="key">2</button>
+        <button class="key">3</button>
+        <button class="key wide">0</button>
+        <button class="key" id="clear">Tyhjennä</button>
+        <button class="key" id="enter">Enter</button>
+      </div>
+    </div>
+
+    <script src="yhteenlaskupeli.js"></script>
+  </body>
+</html>
